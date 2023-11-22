@@ -22,7 +22,26 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="../../../use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+        <style>
+        /* Estilo personalizado para el contador */
+        #contador {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #333; /* Color del texto */
+            margin-top: 15px; /* Ajuste de espacio superior */
+        }
+
+        #contador p {
+            font-size: 36px; /* Tamaño del número grande */
+            margin-bottom: 5px; /* Ajuste de espacio inferior */
+        }
+
+        #contador h6 {
+            font-size: 14px; /* Tamaño del texto "Días", "Horas", etc. */
+            margin: 0; /* Elimina el margen para un diseño más compacto */
+        }
+    </style>
 
 </head>
 
@@ -30,43 +49,32 @@
     <nav class="navbar navbar-expand-xl navbar-light fixed-top">
         <div class="container">
 
-<a class="navbar-brand wow slideInLeft" href="#">Tom<img src="/img/corazon.webp" >Grace
-    <span class="nav-logo-image"></span>
-</a>
+            <a class="navbar-brand wow slideInLeft" href="#">Tom<img src="/img/corazon.webp">Grace
+                <span class="nav-logo-image"></span>
+            </a>
 
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cuple">cuplé</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#story">historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">evento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#people">personas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery-sec">galería</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rsvp">confirmar asistencia</a>
-                    </li>
-
-                </ul>
+        <!-- Agregamos el contador de tiempo -->
+        <div id="contador" class="navbar-text wow fadeIn">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <p id="days"></p>
+                    <h6>Días</h6>
+                </div>
+                <div class="col-3 text-center">
+                    <p id="hours"></p>
+                    <h6>Horas</h6>
+                </div>
+                <div class="col-3 text-center">
+                    <p id="minutes"></p>
+                    <h6>Minutos</h6>
+                </div>
+                <div class="col-3 text-center">
+                    <p id="Seconds"></p>
+                    <h6>Segundos</h6>
+                </div>
             </div>
+        </div>
+
 
         </div>
     </nav>
@@ -130,29 +138,25 @@
         </div>
     </section>
 
-    <section class="section-3">
+    <!-- <section class="section-3">
         <div class="container">
             <div class="row">
 
-                <!-- días -->
                 <div class="col-xl-3 col-lg-3 col-md-3 col-6">
                     <p id="days">111</p>
                     <h1>Días</h1>
                 </div>
 
-                <!-- horas -->
                 <div class="col-xl-3 col-lg-3 col-md-3 col-6">
                     <p id="hours">10</p>
                     <h1>Horas</h1>
                 </div>
 
-                <!-- minutos -->
                 <div class="col-xl-3 col-lg-3 col-md-3 col-6">
                     <p id="minutes">9</p>
                     <h1>Minutos</h1>
                 </div>
 
-                <!-- segundos -->
                 <div class="col-xl-3 col-lg-3 col-md-3 col-6">
                     <p id="Seconds">0</p>
                     <h1>Segundos</h1>
@@ -160,7 +164,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="section-4" id="story">
         <div class="container">
@@ -670,15 +674,15 @@
         }
     </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script type="text/javascript">
         countdown();
     </script>
 
-<script>
-    new WOW().init();
-</script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
